@@ -97,50 +97,94 @@
     </header>
     <main class="main">
         <section class="banner">
-            <div class="uk-position-relative" uk-slideshow="autoplay:true; autoplay-interval:4000; pause-on-hover:false;">
-                <ul class="uk-slideshow-items" uk-height-viewport="min-heigth : 100;">
-                    <li>
-                        <a href="#">
-                            <img src="./css/img//main/banner/ban01.gif" alt="banner1">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./css/img//main/banner/ban02.jpg" alt="banner1">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./css/img//main/banner/ban03.jpg" alt="banner1">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./css/img//main/banner/ban04.jpg" alt="banner1">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./css/img//main/banner/ban05.jpg" alt="banner1">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./css/img//main/banner/ban06.jpg" alt="banner1">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./css/img//main/banner/ban07.jpg" alt="banner1">
-                        </a>
-                    </li>
-                </ul>  
-                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
-                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>      
+            <div id="carouselBanner" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+                <ul class="carousel-inner">
+                  <li class="carousel-item active">
+                    <img src="./css/img/main/banner/ban01.gif" class="d-block w-100" alt="배너1">
+                  </li>
+                  <li class="carousel-item">
+                    <img src="./css/img/main/banner/ban02.jpg" class="d-block w-100" alt="배너2">
+                  </li>
+                  <li class="carousel-item">
+                    <img src="./css/img/main/banner/ban03.jpg" class="d-block w-100" alt="배너3">
+                  </li>
+                  <li class="carousel-item">
+                    <img src="./css/img/main/banner/ban04.jpg" class="d-block w-100" alt="배너4">
+                  </li>
+                  <li class="carousel-item">
+                    <img src="./css/img/main/banner/ban05.jpg" class="d-block w-100" alt="배너5">
+                  </li>
+                  <li class="carousel-item">
+                    <img src="./css/img/main/banner/ban06.jpg" class="d-block w-100" alt="배너6">
+                  </li>
+                </ul>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselBanner" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselBanner" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </section>
-        <section></section>
-        <section></section>
+        <section class="category container">
+            <ul class="row">
+                <li class="col-lg-2 col-4">
+                    <a href="#">
+                        <div>LIVING</div>
+                        <figure>
+                            <img src="./css/img/main/category/living.gif" alt="">
+                        </figure>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-4">
+                    <a href="#">
+                        <div>DIGITAL</div>
+                        <figure>
+                            <img src="./css/img/main/category/digital.jpg" alt="">
+                        </figure>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-4">
+                    <a href="#">
+                        <div>OUTDOOR</div>
+                        <figure>
+                            <img src="./css/img/main/category/outdoor.jpg" alt="">
+                        </figure>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-4">
+                    <a href="#">
+                        <div>KIDS</div>
+                        <figure>
+                            <img src="./css/img/main/category/kids.gif" alt="">
+                        </figure>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-4">
+                    <a href="#">
+                        <div>FASHION</div>
+                        <figure>
+                            <img src="./css/img/main/category/fashion.jpg" alt="">
+                        </figure>
+                    </a>
+                </li>
+                <li class="col-lg-2 col-4">
+                    <a href="#">
+                        <div>COLLABO</div>
+                        <figure>
+                            <img src="./css/img/main/category/collabo.gif" alt="">
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="best">
+            <ul>
+                <li></li>
+            </ul>
+        </section>
         <section></section>
         <section></section>
         <section></section>

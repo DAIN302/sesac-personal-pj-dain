@@ -3,13 +3,26 @@
 
 .banner {
     width: 100%;
+}
+
+.banner, #carouselBanner, #carouselBanner .carousel-inner, #carouselBanner .carousel-item {
     height: 100vh;
 }
 
 .banner img {
-    width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.category {
+    width: 100%;
+    padding: 40px 0 0 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.best {
+    height: 60vh;
 }
 
 
