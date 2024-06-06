@@ -1,0 +1,146 @@
+/* 웹폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;900&family=Source+Code+Pro:wght@400;700&display=swap');
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 상단 */
+.header {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    background-color: rgba(255,255,255, 0.5);
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    margin-left: 20px;
+}
+
+.logo img {
+    object-fit: cover;
+}
+
+.gnb {
+    align-items: center;
+    margin-left: 40px;
+    font-size: 13px;
+    gap: 0 15px;
+    font-weight: bold;
+}
+
+.gnb>li{
+    position: relative;
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+
+.gnb>li>a {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.gnb>li>a::after {
+    display: block;
+    content: '';
+    width : 0%;
+    height: 2px;
+    background-color: #000;
+    margin-left: 50%;
+    transition: all .3s;
+}
+
+.gnb>li:hover>a::after {
+    width: 100%;
+    margin-left: 0;
+}
+
+.sub-menu {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 22.5px);
+    text-align: center;
+    width: 100px;
+    padding: 3px;
+    box-sizing: border-box;
+    background-color: rgba(255,255,255, 0.5);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: none;
+}
+
+.sub-menu li {
+    padding: 7px 0;
+}
+
+.sub-menu li a:hover{
+    color :red;
+}
+
+.gnb>li:hover .sub-menu {
+    display: block;
+}
+
+.nav-right {
+    margin-right: 20px;
+}
+
+.nav-right ul {
+    display: flex;
+    gap: 0 10px;
+}
+
+
+@media screen and (max-width : 576px) {
+    .logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+    }
+
+    #navbarSide {
+        position: absolute;
+        top: 60px;
+        background-color: rgba(255,255,255, 0.5);
+        height: calc(100vh - 60px);
+    }
+
+    #navbarSide li {
+        width : 140px;
+        margin: 10px 0 20px 10px;
+        padding-right: 30px;
+    }
+
+    #navAccordion .accordion-item {
+        background-color: transparent;
+        border: none;
+    }
+
+    #navAccordion .accordion-button {
+        padding: 0;
+        background-color: transparent;
+    }
+
+    #navAccordion .accordion-button:not(.collapsed) {
+        color: var(--bs-accordion-btn-color);
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    #navAccordion .accordion-body {
+        padding: 0;
+    }
+}
