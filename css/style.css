@@ -1,6 +1,7 @@
 @import "reset.css";
 @import "common.css";
 
+/* 메인 배너 */
 .banner {
     width: 100%;
 }
@@ -21,10 +22,12 @@
     text-align: center;
 }
 
+/* 카테고리 */
 .category li {
     padding: 0;
 }
 
+/* 베스트 아이템 */
 .best figure {
     width: 50%;
 }
@@ -96,6 +99,48 @@
 .best-buybtn:hover {
     background-color: red;
 }
+
+/* 뉴 아이템 */
+.new-item {
+    max-width: 1960px;
+    margin: 20px auto;
+    color : #000;
+}
+
+.new-item h2 {
+    font-size: min(4vw, 30px);
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.new-item h3 {
+    font-size: min(3vw, 18px);
+    margin-bottom: 20px;
+}
+
+.new-item h4 {
+    font-size: min(2.6vw, 14px);
+    font-weight: bold;
+    margin : 7px 0;
+}
+
+.new-item h5 {
+    font-size: min(2.4vw, 13px);
+    font-weight: bold;
+}
+
+.new-item del {
+    display: inline-block;
+    color : #aaa;
+    font-weight: normal;
+    margin-right: 5px;
+}
+
+.new-item h5 b {
+    color : red;
+    margin-left: 5px;
+}
+
 
 @media screen and (max-width : 768px) {
     .best figure {
