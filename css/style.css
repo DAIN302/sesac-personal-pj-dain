@@ -16,18 +16,107 @@
 
 .category {
     width: 100%;
-    padding: 40px 0 0 0;
+    padding: 40px 0 40px 0;
     font-weight: bold;
     text-align: center;
 }
 
-.best {
-    height: 60vh;
+.category li {
+    padding: 0;
+}
+
+.best figure {
+    width: 50%;
+}
+
+.best figure+div {
+    width: 50%;
+    position: relative;
+}
+
+.best img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#carouselBest .carousel-control-next {
+    color : #000;
+    z-index: 99;
+}
+
+.bestItem-title {
+    position: absolute;
+    left: 5%;
+    top: 20px;
+    gap : 20px 0;
+}
+
+.bestItem-title h3 {
+    font-size: min(4vw, 30px);
+    font-weight: bold;
+}
+
+.bestItem-title h4 {
+    font-size: min(3vw, 18px);
 }
 
 
+.bestItem-title h5 {
+    font-size: min(3.2vw, 20px);
+    font-weight: bold;
+}
+    
+.bestItem-title h5 del {
+    font-size: min(3vw, 18px);
+    color : #aaa;
+    font-weight: normal;
+}
+.bestItem-content {
+    position: absolute;
+    bottom: 80px;
+    left: 5%;
+}
 
-@media screen and (max-width : 576px) {
+.bestItem-desc {
+    margin-bottom: 30px;
+    font-size: 11px;
+    line-height: 2;
+    color : #555;
+}
 
+.best-buybtn {
+    background-color: #000;
+    color :#fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 12px;
+    transition: all .3s;
+}
+
+.best-buybtn:hover {
+    background-color: red;
+}
+
+@media screen and (max-width : 768px) {
+    .best figure {
+        width: 100%;
+    }
+    
+    .best figure+div {
+        width: 100%;
+        position: absolute;
+        
+    }
+
+    .bestItem-title {
+        background-color: rgba(255,255,255,0.7);
+        padding : 3vw;
+        border-radius: 40px;
+        gap: 5px 0;
+    }
+
+    .bestItem-content {
+        display: none;
+    }
 }
 

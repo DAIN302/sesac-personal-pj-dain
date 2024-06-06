@@ -6,12 +6,16 @@ body {
     /* overflow-x: hidden; */
 }
 
+:root {
+    --bg-colorwhite : rgba(255,255,255,0.7)
+}
+
 /* 상단 */
 .header {
     position: fixed;
     z-index: 999;
     width: 100vw;
-    background-color: rgba(255,255,255, 0.5);
+    background-color: var(--bg-colorwhite);
     height: 60px;
     display: flex;
     justify-content: space-between;
@@ -75,7 +79,7 @@ body {
     width: 100px;
     padding: 3px;
     box-sizing: border-box;
-    background-color: rgba(255,255,255, 0.5);
+    background-color: var(--bg-colorwhite);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     display: none;
@@ -115,7 +119,7 @@ body {
     #navbarSide {
         position: absolute;
         top: 60px;
-        background-color: rgba(255,255,255, 0.5);
+        background-color: var(--bg-colorwhite);
         height: calc(100vh - 60px);
     }
 
