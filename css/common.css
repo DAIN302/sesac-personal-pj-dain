@@ -1,5 +1,6 @@
 /* 웹폰트 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;900&family=Source+Code+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 body {
     font-family: 'Noto Sans KR', sans-serif;
@@ -104,6 +105,34 @@ body {
 .nav-right ul {
     display: flex;
     gap: 0 10px;
+}
+
+/* 하단 */
+.footer {
+    font-size: 12px;
+}
+
+.footer p {
+    margin-bottom: 7px;
+}
+
+.footer p:last-child {
+    margin-bottom: 0;
+    margin-top: 20px;
+    color : #aaa;
+}
+.footer span::after {
+    content: "";
+    display: inline-block;
+    border-left: 1px solid #fff;
+    height: 13px;
+    margin: 0 5px;
+    margin-left: 5px;
+    margin-bottom: -2px;
+}
+
+.footer span:last-child::after {
+    display: none;
 }
 
 

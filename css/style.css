@@ -103,8 +103,17 @@
 /* 뉴 아이템 */
 .new-item {
     max-width: 1960px;
-    margin: 20px auto;
+    margin: 20px auto 50px;
     color : #000;
+}
+
+.new-item figure {
+    overflow: hidden;
+}
+    
+.new-item figure:hover img {
+    transition: all .3s;
+    transform: scale(1.1);
 }
 
 .new-item h2 {
@@ -139,6 +148,67 @@
 .new-item h5 b {
     color : red;
     margin-left: 5px;
+}
+
+/* offline -  zip */
+.zip {
+    background: url(../css/img/main/zip/zip.gif) no-repeat fixed center/cover;
+    height: 70vh;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.zip > div {
+    position: absolute;
+    background-color: #000;
+    padding : 2vw;
+}
+    
+.zip > div > h2, .zip p {
+    color : white;
+}
+
+.zip h2 {
+    font-size: min(3.5vw, 25px);
+    margin-bottom: 20px;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+}
+
+.zip p {
+    margin-bottom: 20px;
+    font-size: min(2.6vw, 18px);
+}
+
+.zip > div button {
+    border-radius: 20px;
+    font-size: min(2vw, 14px);
+}
+
+/* 이벤트 */
+.event {
+    margin-bottom: 40px;
+}
+
+.event h2 {
+    font-size: min(4vw, 30px);
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.event .card h5 {
+    font-weight: bold;
+    font-size: min(2.2vw, 16px);
+}
+    
+.event .card p:nth-child(2) {
+    font-weight: bold;
+    font-size: min(2vw, 14px);
+    margin-bottom: 10px;
+}
+
+.card-text .text-body-secondary {
+    font-size: min(1.6vw, 12px);
 }
 
 
