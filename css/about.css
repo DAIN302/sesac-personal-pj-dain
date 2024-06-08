@@ -87,20 +87,138 @@
     animation-direction: reverse;
 }
 
+/* fun, color, witty 공통 */
+.img_wrap, .txt_wrap {
+    width: 50%;
+}
+
+.img_wrap img {
+    width: 100%
+}
+
+.txt_wrap h3 {
+    margin-bottom: 50px;
+    text-align: center;
+    width: 70%;
+}
+
+.txt_wrap h3 img, .week_wrap h3 img {
+    width: 100%;
+}
+
+.txt_wrap p {
+    font-size: min(4vw, 18px);
+    line-height: 1.5;
+}
+
+.txt_wrap p span, .week_wrap p span {
+    display: block;
+}
+
+.txt_wrap p span:first-child {
+    margin-bottom: 20px;
+}
+
+/* color */
+.color {
+    background-color: var(--bg-colorRed);
+}
+
+.color > figure {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10vh 0;
+    text-align: center;
+}
+
+.color_desc {
+    color : #fff;
+    padding-bottom: 50px;
+}
+
+/* witty */
+.witty > figure {
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* every_week */
+.evry_week {
+    background-color: var(--bg-colorRed);
+}
+
+.chat_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding : 50px 0;
+    gap : 20px 0;
+}
+
+.week_wrap {
+    color : #fff;
+    font-size: min(3.8vw, 14px);
+    line-height: 1.5;
+    padding-bottom : 30px; 
+}
+
+.week_wrap h3 {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.week_anibx {
+    overflow: hidden;
+    padding: 50px 0;
+    width: 100%;
+}
+
+.week_ani {
+    margin: 40px 0;
+    height: 300px;
+    background: url(../css/img/about/slide.png) repeat-x;
+    background-size: auto 100%;
+    animation: imgMove 30s linear infinite;
+}
+
+/* 애니메이션 */
 @keyframes textMove {
     100% {
         background-position: -4754px 0;
     }
 }
 
-
+@keyframes imgMove {
+    100% {
+        background-position: -1980px 0;
+    }
+}
 
 
 
 @media screen and (max-width : 768px) {
+    .img_wrap, .txt_wrap  {
+        width: 100%;
+    }
 
+    .txt_wrap {
+        margin-top: 50px;
+    }
 }
 
 @media screen and (max-width : 576px) {
+    .fun_ani {
+        height: calc(174px / 3);
+    }
 
+    .insta_ani {
+        height: calc(34px / 2);
+    }
+
+    .week_ani {
+        height: calc(300px / 3);
+    }
+
+    
 }
