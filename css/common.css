@@ -1,14 +1,17 @@
 /* 웹폰트 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;900&family=Source+Code+Pro:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("https://hangeul.pstatic.net/hangeul_static/css/nanum-gothic.css");
 
 body {
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Noto Sans KR', 'NanumGothic', sans-serif;
     /* overflow-x: hidden; */
 }
 
 :root {
-    --bg-colorwhite : rgba(255,255,255,1)
+    --bg-colorwhite : rgba(255,255,255,1);
+    --bg-colorRed : #f02525;
+
 }
 
 /* 배경이미지 설명 텍스트 숨기기 */
@@ -17,6 +20,10 @@ body {
     width: 0;
     height: 0;
     overflow: hidden;
+}
+
+.main {
+    min-height: 1000px;
 }
 
 /* 상단 */
@@ -105,7 +112,7 @@ body {
 }
 
 .sub-menu li a:hover{
-    color :red;
+    color : var(--bg-colorRed);
 }
 
 .gnb>li:hover .sub-menu {
@@ -219,7 +226,7 @@ body {
         width: 100%;
         text-align: center;
         font-weight: bold;
-        color : red;
+        color : var(--bg-colorRed);
     }
 
     .uk-input {

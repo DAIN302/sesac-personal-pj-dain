@@ -12,7 +12,7 @@
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.5/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.5/dist/js/uikit-icons.min.js"></script>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/about.css">
 </head>
 <body>
     <!-- 상단 -->
@@ -115,369 +115,36 @@
     </header>
     <!-- 본문 -->
     <main class="main">
-        <section class="banner">
-            <div id="carouselBanner" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
-                <ul class="carousel-inner">
-                  <li class="carousel-item active">
-                    <figure class="w-100 h-100"><span class="ir">배너1</span></figure>
-                  </li>
-                  <li class="carousel-item">
-                    <figure class="w-100 h-100"><span class="ir">배너2</span></figure>
-                  </li>
-                  <li class="carousel-item">
-                    <figure class="w-100 h-100"><span class="ir">배너3</span></figure>
-                  </li>
-                  <li class="carousel-item">
-                    <figure class="w-100 h-100"><span class="ir">배너4</span></figure>
-                  </li>
-                  <li class="carousel-item">
-                    <figure class="w-100 h-100"><span class="ir">배너5</span></figure>
-                  </li>
-                </ul>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselBanner" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselBanner" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+        <section class="intro d-flex align-items-center justify-content-center flex-column text-center">
+            <div class="tit_wrap">
+                <h2 class="tit_img">
+                    <figure>
+                        <img src="./css/img/about/tit.png" alt="타이틀">
+                    </figure>
+                </h2>
+                <p class="tit_desc">일상의 명도와 채도와 높이는 라이프 스타일 브랜드</p>
             </div>
-        </section>
-        <section class="category container-fluid">
-            <ul class="row">
-                <li class="col-lg-2 col-4">
+            <ul class="btn_wrap d-flex justify-content-center align-items-center uk-subnav" uk-switcher>
+                <li>
                     <a href="#">
-                        <div>LIVING</div>
-                        <figure>
-                            <img src="./css/img/main/category/living.gif" alt="리빙">
-                        </figure>
+                        <img src="./css/img/about/btn01.png" alt="fun버튼">
+                        <img src="./css/img/about/btn01_hover.png" alt="fun버튼">
                     </a>
                 </li>
-                <li class="col-lg-2 col-4">
+                <li>
                     <a href="#">
-                        <div>DIGITAL</div>
-                        <figure>
-                            <img src="./css/img/main/category/digital.jpg" alt="디지털">
-                        </figure>
-                    </a>
-                </li>
-                <li class="col-lg-2 col-4">
-                    <a href="#">
-                        <div>OUTDOOR</div>
-                        <figure>
-                            <img src="./css/img/main/category/outdoor.jpg" alt="아웃도어">
-                        </figure>
-                    </a>
-                </li>
-                <li class="col-lg-2 col-4">
-                    <a href="#">
-                        <div>KIDS</div>
-                        <figure>
-                            <img src="./css/img/main/category/kids.gif" alt="키즈">
-                        </figure>
-                    </a>
-                </li>
-                <li class="col-lg-2 col-4">
-                    <a href="#">
-                        <div>FASHION</div>
-                        <figure>
-                            <img src="./css/img/main/category/fashion.jpg" alt="패션">
-                        </figure>
-                    </a>
-                </li>
-                <li class="col-lg-2 col-4">
-                    <a href="#">
-                        <div>COLLABO</div>
-                        <figure>
-                            <img src="./css/img/main/category/collabo.gif" alt="콜라보">
-                        </figure>
+                        <img src="./css/img/about/btn03.png" alt="wit버튼">
+                        <img src="./css/img/about/btn03_hover.png" alt="wit버튼">
                     </a>
                 </li>
             </ul>
-        </section>
-        <section class="best">
-            <div id="carouselBest" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-touch="true">
-                <ul class="carousel-inner">
-                    <li class="carousel-item active d-flex flex-column flex-md-row">
-                        <figure>
-                            <img src="./css/img/main/best/best1.jpeg" alt="베스트 아이템">
-                        </figure>
-                        <div class="bestItem-box">
-                            <div class="bestItem-title d-flex flex-column">
-                                <h3>BEST ITEM</h3>
-                                <h4><a href="#">배스 랩 타월</a></h4>
-                                <h5><del>79,000</del>69,500원</h5>
-                            </div>
-                            <div class="bestItem-content">
-                                <p class="bestItem-desc">
-                                    평범한 하루에 특별한 휴식을 선사하는 시간<br>
-                                    스타일도, 포근함도 모두 갖춘 위글위글 배스 랩 타월은<br>
-                                    기분 전환을 위한 완벽한 선택이 될 거에요.
-                                </p>
-                                <button class="best-buybtn">BUY NOW <span class="fa-solid fa-chevron-right"></span></button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="carousel-item d-flex flex-column flex-md-row">
-                        <figure>
-                            <img src="./css/img/main/best/best2.jpg" alt="베스트 아이템">
-                        </figure>
-                        <div class="bestItem-box">
-                            <div class="bestItem-title d-flex flex-column">
-                                <h3>BEST ITEM</h3>
-                                <h4><a href="#">리유저블 쇼퍼백</a></h4>
-                                <h5><del>12,900</del>10,900원</h5>
-                            </div>
-                            <div class="bestItem-content">
-                                <p class="bestItem-desc">
-                                    이것저것 편하게 담기 좋은 타포린백<br>
-                                    위글위글 타포린백으로 쇼핑부터 세탁까지<br>
-                                    여러분의 일상에 새로운 편리함을 불어넣어 줄 거에요
-                                </p>
-                                <button class="best-buybtn">BUY NOW <span class="fa-solid fa-chevron-right"></span></button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="carousel-item d-flex flex-column flex-md-row">
-                        <figure>
-                            <img src="./css/img/main/best/best3.png" alt="베스트 아이템">
-                        </figure>
-                        <div class="bestItem-box">
-                            <div class="bestItem-title d-flex flex-column">
-                                <h3>BEST ITEM</h3>
-                                <h4><a href="#">줄자</a></h4>
-                                <h5><del>8,800</del>7,900원</h5>
-                            </div>
-                            <div class="bestItem-content">
-                                <p class="bestItem-desc">
-                                    이렇게 귀여운 줄자, 본 적 있나요?<br>
-                                    서랍 속 다 똑같은 색깔의 칙칙한 사무용품들 사이에서<br>
-                                    위글위글 줄자로 분위기를 바꿔보세요
-                                </p>
-                                <button class="best-buybtn">BUY NOW <span class="fa-solid fa-chevron-right"></span></button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="carousel-item d-flex flex-column flex-md-row">
-                        <figure>
-                            <img src="./css/img/main/best/best4.jpg" alt="베스트 아이템">
-                        </figure>
-                        <div class="bestItem-box">
-                            <div class="bestItem-title d-flex flex-column">
-                                <h3>BEST ITEM</h3>
-                                <h4><a href="#">손톱깎이 세트</a></h4>
-                                <h5><del>16,900</del>16,000원</h5>
-                            </div>
-                            <div class="bestItem-content">
-                                <p class="bestItem-desc">
-                                    미니 백을 열면 펼쳐지는 손톱깎이 세트!<br>
-                                    여행 갈 때도 사무실에서 집에서도<br>
-                                    하나씩은 꼭 필요한 구성으로만 알차게 사용해 보세요.
-                                </p>
-                                <button class="best-buybtn">BUY NOW <span class="fa-solid fa-chevron-right"></span></button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="carousel-item d-flex flex-column flex-md-row">
-                        <figure>
-                            <img src="./css/img/main/best/best5.jpg" alt="베스트 아이템">
-                        </figure>
-                        <div class="bestItem-box">
-                            <div class="bestItem-title d-flex flex-column">
-                                <h3>BEST ITEM</h3>
-                                <h4><a href="#">마스킹 테이프</a></h4>
-                                <h5><del>4,400</del>4,000원</h5>
-                            </div>
-                            <div class="bestItem-content">
-                                <p class="bestItem-desc">
-                                    일상 속 작은 변화로 큰 기쁨을!<br>
-                                    위글위글과 함께하는 책상 위엔 좋은 아이디어가 가득!<br>
-                                    마스킹 테이프로 당신의 공간에 창의력과 색채를 더해보세요
-                                </p>
-                                <button class="best-buybtn">BUY NOW <span class="fa-solid fa-chevron-right"></span></button>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="new-item">
-            <h2>NEW ITEM</h2>
-            <h3>반복되는 일상이 지루할 때 분위기 전환!</h3>
-            <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slider="autoplay:true; autoplay-interval=4000;">
-                <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-grid">
-                    <li>
-                        <a href="#">
-                            <figure>
-                                <img src="./css/img/main/new/n01.jpg" alt="신상품">
-                            </figure>
-                            <h4>피크닉백 - Teddy Bear</h4>
-                            <h5><del>12,800원</del>12,100원<b>5%</b></h5>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <figure>
-                                <img src="./css/img/main/new/n02.jpg" alt="신상품">
-                            </figure>
-                            <h4>피크닉백 - Spring Garden Green</h4>
-                            <h5><del>12,800원</del>12,100원<b>5%</b></h5>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <figure>
-                                <img src="./css/img/main/new/n03.jpg" alt="신상품">
-                            </figure>
-                            <h4>피크닉백 - Spring Garden Black</h4>
-                            <h5><del>12,800원</del>12,100원<b>5%</b></h5>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <figure>
-                                <img src="./css/img/main/new/n04.jpg" alt="신상품">
-                            </figure>
-                            <h4>피크닉백 - Spring Garden Yellow</h4>
-                            <h5><del>12,800원</del>12,100원<b>5%</b></h5>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <figure>
-                                <img src="./css/img/main/new/n05.jpg" alt="신상품">
-                            </figure>
-                            <h4>피크닉백 - Hound Tooth Check</h4>
-                            <h5><del>12,800원</del>12,100원<b>5%</b></h5>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <figure>
-                                <img src="./css/img/main/new/n06.jpg" alt="신상품">
-                            </figure>
-                            <h4>피크닉매트 - Spring Garden</h4>
-                            <h5><del>29,800원</del>26,800원<b>5%</b></h5>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <figure>
-                                <img src="./css/img/main/new/n07.jpg" alt="신상품">
-                            </figure>
-                            <h4>피크닉매트 - Teddy Bear</h4>
-                            <h5><del>29,800원</del>26,800원<b>5%</b></h5>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <figure>
-                                <img src="./css/img/main/new/n08.jpg" alt="신상품">
-                            </figure>
-                            <h4>피크닉매트 - Cotton Cloud</h4>
-                            <h5><del>29,800원</del>26,800원<b>5%</b></h5>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <figure>
-                                <img src="./css/img/main/new/n09.jpg" alt="신상품">
-                            </figure>
-                            <h4>피크닉매트 - Hound Tooth Check</h4>
-                            <h5><del>29,800원</del>26,800원<b>5%</b></h5>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <figure>
-                                <img src="./css/img/main/new/n10.jpg" alt="신상품">
-                            </figure>
-                            <h4>여행용 목베개</h4>
-                            <h5><del>20,700원</del>18,600원<b>10%</b></h5>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <figure>
-                                <img src="./css/img/main/new/n11.jpg" alt="신상품">
-                            </figure>
-                            <h4>폴딩 메시지 카드</h4>
-                            <h5>2,500원</h5>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <figure>
-                                <img src="./css/img/main/new/n12.jpg" alt="신상품">
-                            </figure>
-                            <h4>트래블세트 - I'm Dreaming</h4>
-                            <h5><del>32,800원</del>29,800원<b>9%</b></h5>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <figure>
-                                <img src="./css/img/main/new/n13.jpg" alt="신상품">
-                            </figure>
-                            <h4>트래블세트 - Don't Panic</h4>
-                            <h5><del>32,800원</del>29,800원<b>9%</b></h5>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <figure>
-                                <img src="./css/img/main/new/n14.jpg" alt="신상품">
-                            </figure>
-                            <h4>코튼 캔디 샤워 클렌저</h4>
-                            <h5><del>20,000원</del>9,900원<b>53%</b></h5>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <figure>
-                                <img src="./css/img/main/new/n15.jpg" alt="신상품">
-                            </figure>
-                            <h4>세안밴드</h4>
-                            <h5><del>15,200원</del>13,800원<b>9%</b></h5>
-                        </a>
-                    </li>
-                    
-                </ul>    
-                <a class="uk-position-center-left uk-position-small uk-hidden-hover uk-light" href uk-slidenav-previous uk-slider-item="previous"></a>
-                <a class="uk-position-center-right uk-position-small uk-hidden-hover uk-light" href uk-slidenav-next uk-slider-item="next"></a>
-            </div>
-        </section>
-        <section class="zip">
-            <div>
-                <h2>WIGGLEWIGGLE ZIP</h2>
-                <p>
-                    블랙 하우스의 문을 여는 순간,<br>
-                    세상 모든 컬러가 쏟아집니다.
-                </p>
-                <button type="button" class="btn btn-light">VIEW MORE</button>
-            </div>
-            <span class="ir">위글집 배경</span>
-        </section>
-        <section class="event">
-            <h2>EVENT</h2>
-            <div class="card-group">
-                <article class="card">
-                    <img src="./css/img/main/event/collabo.jpg" class="card-img-top" alt="이벤트">
-                    <div class="card-body">
-                      <h5 class="card-title">COLLABO</h5>
-                      <p class="card-text">벨리곰 X 위글위글</p>
-                      <p class="card-text"><small class="text-body-secondary">일상에 재미를 더해줄 한정판 제품을 만나보세요.</small></p>
-                    </div>
-                </article>
-                <article class="card">
-                    <img src="./css/img/main/event/outlet.jpg" class="card-img-top" alt="이벤트">
-                    <div class="card-body">
-                      <h5 class="card-title">OUTLET</h5>
-                      <p class="card-text">위글위글 아울렛</p>
-                      <p class="card-text"><small class="text-body-secondary">품절임박! 다시는 못 만나는 단종상품을 마지막으로 만나보세요.</small></p>
-                    </div>
-                </article>
+            <div class="ani_wrap uk-switcher">
+                <figure>
+                    <img src="./css/img/about/balloon05.webp" alt="">
+                </figure>
+                <figure>
+                    <img src="./css/img/about/smilelove02.webp" alt="">
+                </figure>
             </div>
         </section>
     </main>

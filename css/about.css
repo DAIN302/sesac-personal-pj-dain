@@ -1,0 +1,84 @@
+@import "reset.css";
+@import "common.css";
+
+.intro {
+    position: relative;
+    padding : 150px 0;
+    background-color: var(--bg-colorRed);
+    width: 100%;
+    color : #fff;
+    overflow: hidden;
+}
+
+.intro .tit_wrap {
+    padding : 0 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.tit_desc {
+    margin-top: 50px;
+    font-size: min(3.5vw, 23px);
+}
+
+.btn_wrap {
+    position: relative;
+    margin-top: 80px;
+    z-index: 1;
+    gap: 0 15px;
+}
+
+.uk-subnav {
+    flex-wrap: nowrap;
+    width: min(30vw, 300px);
+}
+
+.btn_wrap li {
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn_wrap li img {
+    display: inline-block;
+    width: 100%;
+}
+
+.btn_wrap li img:last-child {
+    display: none;
+}
+
+.btn_wrap li:hover img:first-child {
+    display: none;
+}
+
+.btn_wrap li:hover img:last-child {
+    display: inline-block;
+}
+
+.ani_wrap {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+}
+
+.ani_wrap figure {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.ani_wrap figure img {
+    height: 120%;
+    object-fit: cover;
+}
+
+
+
+@media screen and (max-width : 768px) {
+
+}
+
+@media screen and (max-width : 576px) {
+
+}
