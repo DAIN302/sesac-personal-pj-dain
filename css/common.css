@@ -8,7 +8,15 @@ body {
 }
 
 :root {
-    --bg-colorwhite : rgba(255,255,255,0.7)
+    --bg-colorwhite : rgba(255,255,255,1)
+}
+
+/* 배경이미지 설명 텍스트 숨기기 */
+.ir {
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
 }
 
 /* 상단 */
@@ -24,9 +32,7 @@ body {
 }
 
 .nav-left {
-    display: flex;
     height: 100%;
-    align-items: center;
 }
 
 .logo {
@@ -39,7 +45,6 @@ body {
 }
 
 .gnb {
-    align-items: center;
     margin-left: 40px;
     font-size: 13px;
     gap: 0 15px;
@@ -150,10 +155,12 @@ body {
         top: 60px;
         background-color: var(--bg-colorwhite);
         height: calc(100vh - 60px);
+        font-size: max(1.6vw, 14px);
+        font-weight: bold;
     }
 
     #navbarSide li {
-        width : 140px;
+        width : 240px;
         margin: 10px 0 20px 10px;
         padding-right: 30px;
     }
@@ -166,6 +173,7 @@ body {
     #navAccordion .accordion-button {
         padding: 0;
         background-color: transparent;
+        font-size: max(1.6vw, 14px);
     }
 
     #navAccordion .accordion-button:not(.collapsed) {
@@ -176,5 +184,14 @@ body {
 
     #navAccordion .accordion-body {
         padding: 0;
+    }
+
+    .nav-bottom {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        color : red;
     }
 }

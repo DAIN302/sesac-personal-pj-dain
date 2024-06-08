@@ -10,11 +10,31 @@
     height: 100vh;
 }
 
-.banner img {
-    height: 100%;
-    object-fit: cover;
+#carouselBanner ul li figure {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
+#carouselBanner ul li:first-child figure {
+    background-image: url(../css/img/main/banner/ban02.jpg);
+}
+
+#carouselBanner ul li:nth-child(2) figure {
+    background-image: url(../css/img/main/banner/ban03.jpg);
+}
+#carouselBanner ul li:nth-child(3) figure {
+    background-image: url(../css/img/main/banner/ban04.jpg);
+}
+#carouselBanner ul li:nth-child(4) figure {
+    background-image: url(../css/img/main/banner/ban05.jpg);
+}
+#carouselBanner ul li:last-child figure {
+    background-image: url(../css/img/main/banner/ban06.jpg);
+}
+
+/* 카테고리 */
 .category {
     width: 100%;
     padding: 40px 0 40px 0;
@@ -22,9 +42,12 @@
     text-align: center;
 }
 
-/* 카테고리 */
 .category li {
     padding: 0;
+}
+
+.category ul {
+    width: 100%;
 }
 
 /* 베스트 아이템 */
@@ -128,13 +151,13 @@
 }
 
 .new-item h4 {
-    font-size: min(2.6vw, 14px);
+    font-size: min(2.8vw, 14px);
     font-weight: bold;
     margin : 7px 0;
 }
 
 .new-item h5 {
-    font-size: min(2.4vw, 13px);
+    font-size: min(2.6vw, 13px);
     font-weight: bold;
 }
 
@@ -198,17 +221,17 @@
 
 .event .card h5 {
     font-weight: bold;
-    font-size: min(2.2vw, 16px);
+    font-size: min(3.2vw, 16px);
 }
     
 .event .card p:nth-child(2) {
     font-weight: bold;
-    font-size: min(2vw, 14px);
+    font-size: min(3vw, 14px);
     margin-bottom: 10px;
 }
 
 .card-text .text-body-secondary {
-    font-size: min(1.6vw, 12px);
+    font-size: min(2.8vw, 12px);
 }
 
 

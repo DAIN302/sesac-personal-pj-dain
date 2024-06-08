@@ -14,17 +14,18 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <!-- 상단 -->
     <header class="header">
         <button class="ham d-sm-none d-block" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSide">
             <span class="fa-solid fa-bars"></span>
         </button>
-        <nav class="nav-left">
+        <nav class="nav-left d-flex align-items-center">
             <h1 class="logo">
                 <a href="./index.html">
                     <img src="./css/img/logo.png" alt="">
                 </a>
             </h1>
-            <ul class="gnb d-none d-sm-flex">
+            <ul class="gnb d-none d-sm-flex align-items-center">
                 <li>
                     <a href="#">ABOUT US</a>
                 </li>
@@ -67,7 +68,11 @@
                 </li>
             </ul>
         </aside>
-        <div class="collapse collapse-horizontal" id="navbarSide">
+        <div class="collapse collapse-horizontal d-sm-none" id="navbarSide">
+            <div class="uk-inline">
+                <span class="uk-form-icon" uk-icon="icon: search"></span>
+                <input class="uk-input" type="text" placeholder="SEARCH">
+            </div>
             <ul class="accordion" id="navAccordion">
                 <li>
                     <a href="#">ABOUT US</a>
@@ -93,26 +98,33 @@
                     <a href="#">OFFLINE</a>
                 </li>
             </ul>
+            <div class="nav-bottom">
+                <ul class="d-flex justy">
+                    <li><a href="#">LOG IN</a></li>
+                    <li><a href="#">ORDER</a></li>
+                </ul>
+            </div>
         </div>
     </header>
+    <!-- 본문 -->
     <main class="main">
         <section class="banner">
             <div id="carouselBanner" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
                 <ul class="carousel-inner">
                   <li class="carousel-item active">
-                    <img src="./css/img/main/banner/ban02.jpg" class="d-block w-100" alt="배너2">
+                    <figure class="w-100 h-100"><span class="ir">배너1</span></figure>
                   </li>
                   <li class="carousel-item">
-                    <img src="./css/img/main/banner/ban03.jpg" class="d-block w-100" alt="배너3">
+                    <figure class="w-100 h-100"><span class="ir">배너2</span></figure>
                   </li>
                   <li class="carousel-item">
-                    <img src="./css/img/main/banner/ban04.jpg" class="d-block w-100" alt="배너4">
+                    <figure class="w-100 h-100"><span class="ir">배너3</span></figure>
                   </li>
                   <li class="carousel-item">
-                    <img src="./css/img/main/banner/ban05.jpg" class="d-block w-100" alt="배너5">
+                    <figure class="w-100 h-100"><span class="ir">배너4</span></figure>
                   </li>
                   <li class="carousel-item">
-                    <img src="./css/img/main/banner/ban06.jpg" class="d-block w-100" alt="배너6">
+                    <figure class="w-100 h-100"><span class="ir">배너5</span></figure>
                   </li>
                 </ul>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselBanner" data-bs-slide="prev">
@@ -125,13 +137,13 @@
                 </button>
             </div>
         </section>
-        <section class="category container">
+        <section class="category container-fluid">
             <ul class="row">
                 <li class="col-lg-2 col-4">
                     <a href="#">
                         <div>LIVING</div>
                         <figure>
-                            <img src="./css/img/main/category/living.gif" alt="">
+                            <img src="./css/img/main/category/living.gif" alt="리빙">
                         </figure>
                     </a>
                 </li>
@@ -139,7 +151,7 @@
                     <a href="#">
                         <div>DIGITAL</div>
                         <figure>
-                            <img src="./css/img/main/category/digital.jpg" alt="">
+                            <img src="./css/img/main/category/digital.jpg" alt="디지털">
                         </figure>
                     </a>
                 </li>
@@ -147,7 +159,7 @@
                     <a href="#">
                         <div>OUTDOOR</div>
                         <figure>
-                            <img src="./css/img/main/category/outdoor.jpg" alt="">
+                            <img src="./css/img/main/category/outdoor.jpg" alt="아웃도어">
                         </figure>
                     </a>
                 </li>
@@ -155,7 +167,7 @@
                     <a href="#">
                         <div>KIDS</div>
                         <figure>
-                            <img src="./css/img/main/category/kids.gif" alt="">
+                            <img src="./css/img/main/category/kids.gif" alt="키즈">
                         </figure>
                     </a>
                 </li>
@@ -163,7 +175,7 @@
                     <a href="#">
                         <div>FASHION</div>
                         <figure>
-                            <img src="./css/img/main/category/fashion.jpg" alt="">
+                            <img src="./css/img/main/category/fashion.jpg" alt="패션">
                         </figure>
                     </a>
                 </li>
@@ -171,7 +183,7 @@
                     <a href="#">
                         <div>COLLABO</div>
                         <figure>
-                            <img src="./css/img/main/category/collabo.gif" alt="">
+                            <img src="./css/img/main/category/collabo.gif" alt="콜라보">
                         </figure>
                     </a>
                 </li>
@@ -291,7 +303,7 @@
                     <li>
                         <a href="#">
                             <figure>
-                                <img src="./css/img/main/new/n01.jpg">
+                                <img src="./css/img/main/new/n01.jpg" alt="신상품">
                             </figure>
                             <h4>피크닉백 - Teddy Bear</h4>
                             <h5><del>12,800원</del>12,100원<b>5%</b></h5>
@@ -300,7 +312,7 @@
                     <li>
                         <a href="#">
                             <figure>
-                                <img src="./css/img/main/new/n02.jpg">
+                                <img src="./css/img/main/new/n02.jpg" alt="신상품">
                             </figure>
                             <h4>피크닉백 - Spring Garden Green</h4>
                             <h5><del>12,800원</del>12,100원<b>5%</b></h5>
@@ -309,7 +321,7 @@
                     <li>
                         <a href="#">
                             <figure>
-                                <img src="./css/img/main/new/n03.jpg">
+                                <img src="./css/img/main/new/n03.jpg" alt="신상품">
                             </figure>
                             <h4>피크닉백 - Spring Garden Black</h4>
                             <h5><del>12,800원</del>12,100원<b>5%</b></h5>
@@ -318,7 +330,7 @@
                     <li>
                         <a href="#">
                             <figure>
-                                <img src="./css/img/main/new/n04.jpg">
+                                <img src="./css/img/main/new/n04.jpg" alt="신상품">
                             </figure>
                             <h4>피크닉백 - Spring Garden Yellow</h4>
                             <h5><del>12,800원</del>12,100원<b>5%</b></h5>
@@ -327,7 +339,7 @@
                     <li>
                         <a href="#">
                             <figure>
-                                <img src="./css/img/main/new/n05.jpg">
+                                <img src="./css/img/main/new/n05.jpg" alt="신상품">
                             </figure>
                             <h4>피크닉백 - Hound Tooth Check</h4>
                             <h5><del>12,800원</del>12,100원<b>5%</b></h5>
@@ -336,7 +348,7 @@
                     <li>
                         <a href="#">
                             <figure>
-                                <img src="./css/img/main/new/n06.jpg">
+                                <img src="./css/img/main/new/n06.jpg" alt="신상품">
                             </figure>
                             <h4>피크닉매트 - Spring Garden</h4>
                             <h5><del>29,800원</del>26,800원<b>5%</b></h5>
@@ -345,7 +357,7 @@
                     <li>
                         <a href="#">
                             <figure>
-                                <img src="./css/img/main/new/n07.jpg">
+                                <img src="./css/img/main/new/n07.jpg" alt="신상품">
                             </figure>
                             <h4>피크닉매트 - Teddy Bear</h4>
                             <h5><del>29,800원</del>26,800원<b>5%</b></h5>
@@ -354,7 +366,7 @@
                     <li>
                         <a href="#">
                             <figure>
-                                <img src="./css/img/main/new/n08.jpg">
+                                <img src="./css/img/main/new/n08.jpg" alt="신상품">
                             </figure>
                             <h4>피크닉매트 - Cotton Cloud</h4>
                             <h5><del>29,800원</del>26,800원<b>5%</b></h5>
@@ -363,7 +375,7 @@
                     <li>
                         <a href="#">
                             <figure>
-                                <img src="./css/img/main/new/n09.jpg">
+                                <img src="./css/img/main/new/n09.jpg" alt="신상품">
                             </figure>
                             <h4>피크닉매트 - Hound Tooth Check</h4>
                             <h5><del>29,800원</del>26,800원<b>5%</b></h5>
@@ -372,7 +384,7 @@
                     <li>
                         <a href="#">
                             <figure>
-                                <img src="./css/img/main/new/n10.jpg">
+                                <img src="./css/img/main/new/n10.jpg" alt="신상품">
                             </figure>
                             <h4>여행용 목베개</h4>
                             <h5><del>20,700원</del>18,600원<b>10%</b></h5>
@@ -381,7 +393,7 @@
                     <li>
                         <a href="#">
                             <figure>
-                                <img src="./css/img/main/new/n11.jpg">
+                                <img src="./css/img/main/new/n11.jpg" alt="신상품">
                             </figure>
                             <h4>폴딩 메시지 카드</h4>
                             <h5>2,500원</h5>
@@ -390,7 +402,7 @@
                     <li>
                         <a href="#">
                             <figure>
-                                <img src="./css/img/main/new/n12.jpg">
+                                <img src="./css/img/main/new/n12.jpg" alt="신상품">
                             </figure>
                             <h4>트래블세트 - I'm Dreaming</h4>
                             <h5><del>32,800원</del>29,800원<b>9%</b></h5>
@@ -399,7 +411,7 @@
                     <li>
                         <a href="#">
                             <figure>
-                                <img src="./css/img/main/new/n13.jpg">
+                                <img src="./css/img/main/new/n13.jpg" alt="신상품">
                             </figure>
                             <h4>트래블세트 - Don't Panic</h4>
                             <h5><del>32,800원</del>29,800원<b>9%</b></h5>
@@ -408,7 +420,7 @@
                     <li>
                         <a href="#">
                             <figure>
-                                <img src="./css/img/main/new/n14.jpg">
+                                <img src="./css/img/main/new/n14.jpg" alt="신상품">
                             </figure>
                             <h4>코튼 캔디 샤워 클렌저</h4>
                             <h5><del>20,000원</del>9,900원<b>53%</b></h5>
@@ -417,7 +429,7 @@
                     <li>
                         <a href="#">
                             <figure>
-                                <img src="./css/img/main/new/n15.jpg">
+                                <img src="./css/img/main/new/n15.jpg" alt="신상품">
                             </figure>
                             <h4>세안밴드</h4>
                             <h5><del>15,200원</del>13,800원<b>9%</b></h5>
@@ -438,12 +450,13 @@
                 </p>
                 <button type="button" class="btn btn-light">VIEW MORE</button>
             </div>
+            <span class="ir">위글집 배경</span>
         </section>
         <section class="event">
             <h2>EVENT</h2>
             <div class="card-group">
                 <article class="card">
-                    <img src="./css/img/main/event/collabo.jpg" class="card-img-top" alt="...">
+                    <img src="./css/img/main/event/collabo.jpg" class="card-img-top" alt="이벤트">
                     <div class="card-body">
                       <h5 class="card-title">COLLABO</h5>
                       <p class="card-text">벨리곰 X 위글위글</p>
@@ -451,7 +464,7 @@
                     </div>
                 </article>
                 <article class="card">
-                    <img src="./css/img/main/event/outlet.jpg" class="card-img-top" alt="...">
+                    <img src="./css/img/main/event/outlet.jpg" class="card-img-top" alt="이벤트">
                     <div class="card-body">
                       <h5 class="card-title">OUTLET</h5>
                       <p class="card-text">위글위글 아울렛</p>
@@ -461,6 +474,7 @@
             </div>
         </section>
     </main>
+    <!-- 하단 -->
     <footer class="footer bg-dark text-white mt-5 py-3">
         <p>
             <span>Corporate Name. 주식회사 아트쉐어</span>
