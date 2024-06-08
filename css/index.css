@@ -18,20 +18,20 @@
 }
 
 #carouselBanner ul li:first-child figure {
-    background-image: url(../css/img/main/banner/ban02.jpg);
+    background-image: url(./img/main/banner/ban02.jpg);
 }
 
 #carouselBanner ul li:nth-child(2) figure {
-    background-image: url(../css/img/main/banner/ban03.jpg);
+    background-image: url(./img/main/banner/ban03.jpg);
 }
 #carouselBanner ul li:nth-child(3) figure {
-    background-image: url(../css/img/main/banner/ban04.jpg);
+    background-image: url(./img/main/banner/ban04.jpg);
 }
 #carouselBanner ul li:nth-child(4) figure {
-    background-image: url(../css/img/main/banner/ban05.jpg);
+    background-image: url(./img/main/banner/ban05.jpg);
 }
 #carouselBanner ul li:last-child figure {
-    background-image: url(../css/img/main/banner/ban06.jpg);
+    background-image: url(./img/main/banner/ban06.jpg);
 }
 
 /* 카테고리 */
@@ -175,7 +175,7 @@
 
 /* offline -  zip */
 .zip {
-    background: url(../css/img/main/zip/zip.gif) no-repeat fixed center/cover;
+    background: url(./img/main/zip/zip.gif) no-repeat fixed center/cover;
     height: 70vh;
     position: relative;
     margin-bottom: 50px;

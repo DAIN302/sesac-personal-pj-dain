@@ -1,0 +1,138 @@
+@import "reset.css";
+@import "common.css";
+
+:root {
+    --bg-1fColor : rgb(254,0,52);
+    --bg-2fColor : rgb(255,153,0);
+    --bg-3fColor : rgb(0,52,170);
+    --bg-4fColor : rgb(151,19,204);
+}
+
+body {
+    background-color: var(--bg-colorBlack);
+}
+
+/* 인트로 */
+.intro {
+    position: relative;
+    top: 60px;
+}
+
+.intro img{
+   width: 100%;
+}
+
+.text_anibx {
+    overflow: hidden;
+    width: 100%;
+}
+
+.text_ani {
+    height: 59px;
+    background: url(./img/offline/border-banner.png) repeat-x;
+    background-size: auto 100%;
+    animation: textMove 60s linear infinite;
+}
+
+/* zip */
+.zip {
+    margin-top: 59px;
+    text-align: center;
+    padding : 50px 0;
+}
+
+.zip_txt {
+    color : #fff;
+    gap: 5px 0;
+    margin-bottom : 50px;
+}
+
+.zip_txt b {
+    font-weight: 700;
+}
+
+.zip_img {
+    margin-bottom: 50px;
+}
+
+.location h2 {
+    color :var(--bg-colorYellow);
+    padding: 50px 0;
+    font-size: min(10vw, 45px);
+    font-family: 'MoveSans-Bold';
+}
+
+.loca_txt {
+    color :#fff;
+    font-size: min(3vw, 28px);
+}
+
+.loca_txt > div {
+    width: 50%;
+}
+
+.location iframe {
+    width: 80%;
+    height: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+/* floor */
+.floor_wrap .uk-subnav>* {
+    padding-left: 0;
+}
+
+.floor_wrap .uk-subnav {
+    margin-left: 0;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.floor_wrap .uk-subnav li {
+    width : min(20vw, 200px);
+}
+
+.floor_descbx .floor_desc {
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.floor_descbx .floor_desc:first-child{
+    background-color: var(--bg-1fColor);
+}
+.floor_descbx .floor_desc:nth-child(2){
+    background-color: var(--bg-2fColor);
+}
+.floor_descbx .floor_desc:nth-child(3){
+    background-color: var(--bg-3fColor);
+}
+.floor_descbx .floor_desc:last-child{
+    background-color: var(--bg-4fColor);
+}
+
+.floor_desc img {
+    width: min(60vw, 700px)
+}
+
+/* 애니메이션 */
+@keyframes textMove {
+    100% {
+        background-position: -3834px 0;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .loca_txt > div {
+        width: 100%;
+    }
+
+    .loca_txt > div:first-child {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width : 576px) {
+    .floor_desc img {
+        width: 100%
+    }
+}

@@ -2,6 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;900&family=Source+Code+Pro:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url("https://hangeul.pstatic.net/hangeul_static/css/nanum-gothic.css");
+@font-face {
+    font-family: 'MoveSans-Bold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/MoveSans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
 
 body {
     font-family: 'Noto Sans KR', 'NanumGothic', sans-serif;
@@ -11,7 +17,8 @@ body {
 :root {
     --bg-colorwhite : rgba(255,255,255,1);
     --bg-colorRed : #f02525;
-
+    --bg-colorBlack : #18181A;
+    --bg-colorYellow : #f0c61c;
 }
 
 /* 배경이미지 설명 텍스트 숨기기 */

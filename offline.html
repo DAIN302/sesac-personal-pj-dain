@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wiggle wiggle</title>
+    <link rel="shortcut icon" href="./css/img/rbn_char2.png" type="image/x-icon">
+    <!-- 부트스트랩 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.5/dist/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.5/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.5/dist/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="./css/offline.css">
+</head>
+<body>
+    <!-- 상단 -->
+    <header class="header">
+        <button class="ham d-sm-none d-block" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSide">
+            <span class="fa-solid fa-bars"></span>
+        </button>
+        <button class="bag d-sm-none d-block">
+            <span class="fa-solid fa-bag-shopping"></span>
+        </button>
+        <nav class="nav-left d-flex align-items-center">
+            <h1 class="logo">
+                <a href="./index.html">
+                    <img src="./css/img/logo.png" alt="">
+                </a>
+            </h1>
+            <ul class="gnb d-none d-sm-flex align-items-center">
+                <li>
+                    <a href="/about.html">ABOUT US</a>
+                </li>
+                <li>
+                    <a href="#">PRODUCT</a>
+                    <div class="sub-menu">
+                        <ol>
+                            <li><a href="#">NEW</a></li>
+                            <li><a href="#">BEST</a></li>
+                            <li><a href="#">LIVING</a></li>
+                            <li><a href="#">DIGITAL</a></li>
+                            <li><a href="#">OUTDOOR</a></li>
+                            <li><a href="#">KIDS</a></li>
+                            <li><a href="#">FASHION</a></li>
+                            <li><a href="#">COLLABO</a></li>
+                        </ol>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">OFFLINE</a>
+                </li>
+            </ul>
+        </nav>
+        <aside class="nav-right d-none d-sm-block">
+            <ul class="d-flex align-items-center">
+                <li class="d-flex">
+                    <button title="검색" type="button" data-bs-toggle="collapse" data-bs-target="#searchBox">
+                        <span class="fa-solid fa-magnifying-glass"></span>
+                    </button>
+                    <div class="collapse collapse-horizontal" id="searchBox">
+                        <input type="text" placeholder="SEARCH">
+                    </div>
+                </li>
+                <li>
+                    <a href="#" title="장바구니">
+                        <span class="fa-solid fa-bag-shopping"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="로그인">
+                        <span class="fa-solid fa-right-to-bracket"></span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <div class="collapse collapse-horizontal d-sm-none" id="navbarSide">
+            <div class="uk-inline">
+                <span class="uk-form-icon" uk-icon="icon: search"></span>
+                <input class="uk-input" type="text" placeholder="SEARCH">
+            </div>
+            <ul class="accordion" id="navAccordion">
+                <li>
+                    <a href="/about.html">ABOUT US</a>
+                </li>
+                <li class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#productBtn">PRODUCT</span>
+                    </div>
+                    <div id="productBtn" class="accordion-collapse collapse" data-bs-parent="#navAccordion">
+                       <ol class="accordion-body">
+                        <li><a href="#">NEW</a></li>
+                        <li><a href="#">BEST</a></li>
+                        <li><a href="#">LIVING</a></li>
+                        <li><a href="#">DIGITAL</a></li>
+                        <li><a href="#">OUTDOOR</a></li>
+                        <li><a href="#">KIDS</a></li>
+                        <li><a href="#">FASHION</a></li>
+                        <li><a href="#">COLLABO</a></li>
+                       </ol> 
+                    </div>
+                </li>
+                <li>
+                    <a href="#">OFFLINE</a>
+                </li>
+            </ul>
+            <div class="nav-bottom">
+                <ul class="d-flex justy">
+                    <li><a href="#">LOG IN</a></li>
+                    <li><a href="#">ORDER</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- 본문 -->
+    <main class="main">
+        <section class="intro">
+            <img src="./css/img/offline/intro_pc.png" alt="인트로이미지">
+            <div class="text_anibx">
+                <div class="text_ani"></div>
+            </div>
+        </section>
+        <section class="zip">
+            <figure class="title container">
+                <img src="./css/img/offline/tit.gif" alt="타이틀">
+            </figure>
+            <figure class="zip_img">
+                <img src="./css/img/offline/flagship_store_pc.jpg" alt="스토어">
+            </figure>
+            <article class="zip_txt d-flex flex-column">
+                <p>덩굴로 뒤덮인 새까만 건물로 당신을 초대합니다.</p>
+                <p>어두운 외관과 대비되는</p>
+                <p><b>'세상의 모든 컬러를 담은'</b> 반전의 공간이</p>
+                <p>당신의 눈 앞에 펼쳐집니다.</p>
+            </article>
+            <div id="carouselZip" class="carousel slide container" data-bs-ride="carousel" data-bs-touch="true">
+                <ul class="carousel-inner">
+                  <li class="carousel-item active">
+                    <figure class="w-100 h-100">
+                        <img src="./css/img/offline/banner_01.jpg" alt="zip-image">
+                    </figure>
+                  </li>
+                  <li class="carousel-item">
+                    <figure class="w-100 h-100">
+                        <img src="./css/img/offline/banner_02.jpg" alt="zip-image">
+                    </figure>
+                  </li>
+                  <li class="carousel-item">
+                    <figure class="w-100 h-100">
+                        <img src="./css/img/offline/banner_03.jpg" alt="zip-image">
+                    </figure>
+                  </li>
+                  <li class="carousel-item">
+                    <figure class="w-100 h-100">
+                        <img src="./css/img/offline/banner_04.jpg" alt="zip-image">
+                    </figure>
+                  </li>
+                </ul>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselZip" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselZip" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="location">
+                <h2>LOCATION</h2>
+                <div class="d-flex loca_txt flex-column flex-md-row">
+                    <div class="text-center d-flex flex-column">
+                        <figure>
+                            <img src="./css/img/offline/location_tit.jpg" alt="">
+                        </figure>
+                        <p>서울특별시 강남구 언주로 168길 31</p>
+                        <p>+02-6959-2051</p>
+                        <p>운영시간 : 매일 AM 11:00 ~ PM 8:00</p>
+                    </div>
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d197.76440541385026!2d127.03601101860689!3d37.5260637270201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca36930c2bcb3%3A0xde69dafca7388f4!2z7JyE6riA7JyE6riA7KeRIOuPhOyCsA!5e0!3m2!1sko!2skr!4v1717860102415!5m2!1sko!2skr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="floor">
+            <h2 class="text-center">
+                <img src="./css/img/offline/floor_tit.jpg" alt="floor_guide">
+            </h2>
+            <div class="floor_wrap">
+                <ul class="btn_wrap uk-subnav" uk-switcher>
+                    <li>
+                       <a href="#">
+                        <img src="./css/img/offline/1F_btn.jpg" alt="1f_button">
+                       </a> 
+                    </li>
+                    <li>
+                       <a href="#">
+                        <img src="./css/img/offline/2F_btn.jpg" alt="2f_button">
+                       </a> 
+                    </li>
+                    <li>
+                       <a href="#">
+                        <img src="./css/img/offline/3F_btn.jpg" alt="3f_button">
+                       </a> 
+                    </li>
+                    <li>
+                       <a href="#">
+                        <img src="./css/img/offline/4F_btn.jpg" alt="4f_button">
+                       </a> 
+                    </li>
+                </ul>
+                <div class="floor_descbx uk-switcher">
+                    <div class="floor_desc">
+                        <figure>
+                            <img src="./css/img/offline/1F_text.png" alt="1층설명">
+                        </figure>
+                        <figure>
+                            <img src="./css/img/offline/1F_image.gif" alt="1층">
+                        </figure>    
+                    </div>
+                    <div class="floor_desc">
+                        <figure>
+                            <img src="./css/img/offline/2F_text.png" alt="2층설명">
+                        </figure>
+                        <figure>
+                            <img src="./css/img/offline/2F_image.gif" alt="2층">
+                        </figure>    
+                    </div>
+                    <div class="floor_desc">
+                        <figure>
+                            <img src="./css/img/offline/3F_text.png" alt="3층설명">
+                        </figure>
+                        <figure>
+                            <img src="./css/img/offline/3F_image.gif" alt="3층">
+                        </figure>    
+                    </div>
+                    <div class="floor_desc">
+                        <figure>
+                            <img src="./css/img/offline/4F_text.png" alt="4층설명">
+                        </figure>
+                        <figure>
+                            <img src="./css/img/offline/4F_image.gif" alt="4층">
+                        </figure>    
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- 하단 -->
+    <footer class="footer bg-dark text-white py-3">
+        <p>
+            <span>Corporate Name. 주식회사 아트쉐어</span>
+            <span>Owner. 모성현, 오정현</span>
+            <span>Business License. 201-86-38817</span>
+        </p>
+        <p>
+            <span>E-commerce Registration. 2022-서울강남-02241</span>
+            <span>Phone. 1533-8266(Korean only)</span>
+            <span>Contact Mail. biz_as@artshare.kr</span>
+        </p>
+        <p>
+            <span>Address 서울특별시 강남구 테헤란로44길 8 (역삼동) 4층</span>
+            <span>Personal Information Manager 오정현 (privacy_as@artshare.kr)</span>
+        </p>
+        <p>
+            © ARTSHARE CO., LTD. ALL RIGHTS RESERVED.
+        </p>
+    </footer>
+</body>
+<!-- 부트스트랩 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!-- 폰트어썸 -->
+<script src="https://kit.fontawesome.com/2041668019.js" crossorigin="anonymous"></script>
+</html>

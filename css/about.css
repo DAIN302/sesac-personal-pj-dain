@@ -38,11 +38,9 @@
     height: 100%;
 }
 
-.btn_wrap li img:last-child {
-    display: none;
-}
-
-.btn_wrap li:hover img:first-child {
+.btn_wrap li img:last-child,
+.btn_wrap li:hover img:first-child
+ {
     display: none;
 }
 
@@ -78,7 +76,7 @@
 .fun_ani {
     margin: 40px 0;
     height: 174px;
-    background: url(../css/img/about/FUN.png) repeat-x;
+    background: url(./img/about/FUN.png) repeat-x;
     background-size: auto 100%;
     animation: textMove 20s linear infinite;
 }
@@ -154,6 +152,7 @@
     align-items: center;
     padding : 50px 0;
     gap : 20px 0;
+    text-align: center;
 }
 
 .week_wrap {
@@ -177,7 +176,7 @@
 .week_ani {
     margin: 40px 0;
     height: 300px;
-    background: url(../css/img/about/slide.png) repeat-x;
+    background: url(./img/about/slide.png) repeat-x;
     background-size: auto 100%;
     animation: imgMove 30s linear infinite;
 }
@@ -194,7 +193,6 @@
         background-position: -1980px 0;
     }
 }
-
 
 
 @media screen and (max-width : 768px) {
@@ -219,6 +217,4 @@
     .week_ani {
         height: calc(300px / 3);
     }
-
-    
 }
