@@ -1,6 +1,7 @@
 @import "reset.css";
 @import "common.css";
 
+/* 인트로 */
 .intro {
     position: relative;
     padding : 150px 0;
@@ -25,22 +26,16 @@
     position: relative;
     margin-top: 80px;
     z-index: 1;
-    gap: 0 15px;
 }
 
 .uk-subnav {
     flex-wrap: nowrap;
-    width: min(30vw, 300px);
+    height: min(10vw, 70px);
+    
 }
 
-.btn_wrap li {
-    cursor: pointer;
-    width: 100%;
-}
-
-.btn_wrap li img {
-    display: inline-block;
-    width: 100%;
+.btn_wrap li img, .btn_wrap li, .btn_wrap a {
+    height: 100%;
 }
 
 .btn_wrap li img:last-child {
