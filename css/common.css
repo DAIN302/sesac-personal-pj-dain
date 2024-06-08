@@ -31,6 +31,15 @@ body {
     align-items: center;
 }
 
+.ham {
+    margin-left: 15px;
+}
+
+.bag {
+    position: absolute;
+    right: 5%;
+}
+
 .nav-left {
     height: 100%;
 }
@@ -105,11 +114,29 @@ body {
 
 .nav-right {
     margin-right: 20px;
+    height: 100%;
 }
 
 .nav-right ul {
-    display: flex;
     gap: 0 10px;
+    height: 100%;
+}
+
+#searchBox {
+    margin-left: 5px;
+}
+
+#searchBox input {
+    border: 1px solid #ddd;
+    font-size: 13px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#searchBox input::placeholder {
+    color : #bbb;
+    font-weight: bold;
+
 }
 
 /* 하단 */
@@ -193,5 +220,9 @@ body {
         text-align: center;
         font-weight: bold;
         color : red;
+    }
+
+    .uk-input {
+        border-radius: 15px;
     }
 }
