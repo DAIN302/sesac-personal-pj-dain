@@ -68,6 +68,33 @@
     object-fit: cover;
 }
 
+/* fun */
+.fun {
+    overflow: hidden;
+    padding: 50px 0;
+    width: 100%;
+}
+
+.fun_ani {
+    margin: 40px 0;
+    height: 174px;
+    background: url(../css/img/about/FUN.png) repeat-x;
+    background-size: auto 100%;
+    animation: textMove 20s linear infinite;
+}
+
+.fun_ani.revert {
+    animation-direction: reverse;
+}
+
+@keyframes textMove {
+    100% {
+        background-position: -4754px 0;
+    }
+}
+
+
+
 
 
 @media screen and (max-width : 768px) {
