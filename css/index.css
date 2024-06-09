@@ -300,5 +300,9 @@
     .bestItem-content {
         display: none;
     }
+
+    .zip .bg {
+        position: absolute;
+    }
 }
 
