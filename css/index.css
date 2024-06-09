@@ -66,8 +66,14 @@
     width: 100%;
     margin: 0 auto;
 }
-
+    
 /* 베스트 아이템 */
+.best {
+    max-width: 1920px;
+    margin: 0 auto;
+    
+}
+
 .best figure {
     width: 50%;
 }
@@ -125,6 +131,7 @@
     font-size: 11px;
     line-height: 2;
     color : #555;
+    font-size: min(3vw, 16px);
 }
 
 .best-buybtn {
