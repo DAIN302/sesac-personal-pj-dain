@@ -231,6 +231,7 @@ body {
         position: absolute;
         bottom: 0;
         width: 100%;
+        height: 50px;
         text-align: center;
         font-weight: bold;
         color : var(--bg-colorRed);
