@@ -132,10 +132,13 @@
 
 .new-item figure {
     overflow: hidden;
-}
+    }
     
-.new-item figure:hover img {
+.new-item figure img {
     transition: all .3s;
+}
+
+.new-item figure:hover img {
     transform: scale(1.1);
 }
 
@@ -232,6 +235,18 @@
 
 .card-text .text-body-secondary {
     font-size: min(2.8vw, 12px);
+}
+
+.event .card figure{
+    overflow: hidden;
+}
+
+.event .card img {
+    transition: all .3s;
+}
+
+.event .card:hover img {
+    transform: scale(1.1);
 }
 
 
