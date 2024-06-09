@@ -29,6 +29,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    transform: translateZ(0);
+    will-change: transform;
 }
 
 #carouselBanner ul li:first-child .bg {
