@@ -10,27 +10,41 @@
     height: 100vh;
 }
 
-#carouselBanner ul li figure {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+.bg_wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
-#carouselBanner ul li:first-child figure {
+.bg {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#carouselBanner ul li:first-child .bg {
     background-image: url(./img/main/banner/ban02.jpg);
 }
 
-#carouselBanner ul li:nth-child(2) figure {
+#carouselBanner ul li:nth-child(2) .bg {
     background-image: url(./img/main/banner/ban03.jpg);
 }
-#carouselBanner ul li:nth-child(3) figure {
+#carouselBanner ul li:nth-child(3) .bg {
     background-image: url(./img/main/banner/ban04.jpg);
 }
-#carouselBanner ul li:nth-child(4) figure {
+#carouselBanner ul li:nth-child(4) .bg {
     background-image: url(./img/main/banner/ban05.jpg);
 }
-#carouselBanner ul li:last-child figure {
+#carouselBanner ul li:last-child .bg {
     background-image: url(./img/main/banner/ban06.jpg);
 }
 
@@ -179,15 +193,27 @@
 
 /* offline -  zip */
 .zip {
-    background: url(./img/main/zip/zip.gif) no-repeat fixed center/cover;
     height: 70vh;
     position: relative;
     margin-bottom: 50px;
 }
 
-.zip > div {
+.zip_bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+.zip .bg {
+    background-image: url(./img/main/zip/zip.gif);
+}
+
+.zip_content {
     position: absolute;
     background-color: #000;
+    top: 0;
+    left: 0;
     padding : 2vw;
 }
     
