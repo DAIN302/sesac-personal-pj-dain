@@ -48,6 +48,7 @@
 
 .category ul {
     width: 100%;
+    margin: 0 auto;
 }
 
 /* 베스트 아이템 */
@@ -213,7 +214,9 @@
 
 /* 이벤트 */
 .event {
-    margin-bottom: 40px;
+    max-width: 1920px;
+    margin: 0 auto 40px;
+
 }
 
 .event h2 {
